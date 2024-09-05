@@ -50,8 +50,8 @@ function atualizatabela(){
 
 function atualizaMediafinal(){
 
-    document.getElementById('media-final-valor').innerHTML = calculaMediaFinal();
-    document.getElementById('media-final-resultado').innerHTML = calculaMediaFinal() >= notaMinima ? spanAprovado: spanAprovado;
+    document.getElementById('media-final-valor').innerHTML = calculaMediaFinal().toFixed(2);
+    document.getElementById('media-final-resultado').innerHTML = calculaMediaFinal().toFixed(2) >= notaMinima ? spanAprovado: spanAprovado;
 }
 
 function calculaMediaFinal(){
